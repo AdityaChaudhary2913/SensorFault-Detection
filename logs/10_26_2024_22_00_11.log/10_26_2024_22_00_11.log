@@ -1,0 +1,4 @@
+[ 2024-10-26 22:00:12,317 ] 224 werkzeug - WARNING -  * Debugger is active!
+[ 2024-10-26 22:00:12,330 ] 224 werkzeug - INFO -  * Debugger PIN: 100-103-901
+[ 2024-10-26 22:00:18,046 ] 224 werkzeug - INFO - 127.0.0.1 - - [26/Oct/2024 22:00:18] "GET / HTTP/1.1" 200 -
+[ 2024-10-26 22:00:18,074 ] 224 werkzeug - INFO - 127.0.0.1 - - [26/Oct/2024 22:00:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
