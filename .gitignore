@@ -1,5 +1,2 @@
 /venv
 .env
-
-/Sensor_Fault_detection.egg-info
-/src
