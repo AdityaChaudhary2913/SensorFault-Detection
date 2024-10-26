@@ -1,15 +1,44 @@
-from flask import Flask, render_template, request, send_file
+from flask import Flask, render_template, request, send_file, session, jsonify, redirect, url_for
 from src.exception import CustomException
 from src.logger import logging as lg
-import sys
+import sys, os
+from joblib import load
 from src.pipeline.train_pipeline import TrainingPipeline
 from src.pipeline.predict_pipeline import PredictionPipeline
 
 app = Flask(__name__)
+app.secret_key = os.getenv("SessionSecretKey")
+
+ADMIN_ID = os.getenv("AdminID")
+ADMIN_PASSWORD = os.getenv("AdminPassword")
+
+try:    
+    model = load('artifacts/model.pkl')
+except Exception as e:
+    model = None
 
 @app.route("/")
 def home():
-    return "Welcome to my application"
+    return render_template('home.html', name=model)
+
+@app.route("/admin_login", methods=['POST'])
+def admin_login():
+    data = request.get_json()
+    admin_id = data.get('adminID')
+    admin_password = data.get('adminPassword')
+
+    if admin_id == ADMIN_ID and admin_password == ADMIN_PASSWORD:
+        session['admin_logged_in'] = True
+        return jsonify(success=True)
+    else:
+        session['admin_logged_in'] = False
+        return jsonify(success=False)
+    
+@app.route("/logout")
+def logout():
+    session['admin_logged_in'] = False
+    session.pop('admin_logged_in', None)
+    return redirect(url_for('home'))
 
 @app.route("/train")
 def train_route():

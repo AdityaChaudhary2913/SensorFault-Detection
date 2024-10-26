@@ -1,0 +1,25 @@
+[ 2024-10-27 00:18:12,028 ] 224 werkzeug - WARNING -  * Debugger is active!
+[ 2024-10-27 00:18:12,041 ] 224 werkzeug - INFO -  * Debugger PIN: 100-103-901
+[ 2024-10-27 00:18:13,458 ] 224 werkzeug - INFO - 127.0.0.1 - - [27/Oct/2024 00:18:13] "GET / HTTP/1.1" 200 -
+[ 2024-10-27 00:18:18,154 ] 224 werkzeug - INFO - 127.0.0.1 - - [27/Oct/2024 00:18:18] "GET /predict HTTP/1.1" 200 -
+[ 2024-10-27 00:18:18,163 ] 224 werkzeug - INFO - 127.0.0.1 - - [27/Oct/2024 00:18:18] "[33mGET /script.js HTTP/1.1[0m" 404 -
+[ 2024-10-27 00:18:18,164 ] 224 werkzeug - INFO - 127.0.0.1 - - [27/Oct/2024 00:18:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[ 2024-10-27 00:18:41,020 ] 224 werkzeug - INFO - 127.0.0.1 - - [27/Oct/2024 00:18:41] "POST /admin_login HTTP/1.1" 200 -
+[ 2024-10-27 00:18:41,030 ] 51 root - INFO - Entered initiated_data_ingestion method of data_integration class
+[ 2024-10-27 00:18:41,030 ] 36 root - INFO - Exporting data from mongodb
+[ 2024-10-27 00:18:43,054 ] 43 root - INFO - saving exported data into feature store file path :artifacts
+[ 2024-10-27 00:18:43,082 ] 54 root - INFO - got the data from mongodb
+[ 2024-10-27 00:18:43,082 ] 55 root - INFO - exited initiate_data_ingestion methos of data ingestion class
+[ 2024-10-27 00:18:43,082 ] 48 root - INFO - Entered initiate data transformation method of data transfomration class
+[ 2024-10-27 00:18:43,143 ] 30 root - INFO - Entered the save_object method of MainUtils class
+[ 2024-10-27 00:18:43,145 ] 34 root - INFO - Exited the save_object method of MainUtils class
+[ 2024-10-27 00:18:43,145 ] 79 root - INFO - Splitting training and testing input and target feature
+[ 2024-10-27 00:18:43,145 ] 86 root - INFO - Extracting model config file path
+[ 2024-10-27 00:18:43,145 ] 87 root - INFO - Extracting model config file path
+[ 2024-10-27 00:19:25,753 ] 110 root - INFO - Best found model on both training and testing dataset
+[ 2024-10-27 00:19:25,754 ] 111 root - INFO - Saving model at path: artifacts/model.pkl
+[ 2024-10-27 00:19:25,754 ] 30 root - INFO - Entered the save_object method of MainUtils class
+[ 2024-10-27 00:19:25,755 ] 34 root - INFO - Exited the save_object method of MainUtils class
+[ 2024-10-27 00:19:25,757 ] 224 werkzeug - INFO - 127.0.0.1 - - [27/Oct/2024 00:19:25] "GET /train HTTP/1.1" 200 -
+[ 2024-10-27 00:19:35,811 ] 224 werkzeug - INFO - 127.0.0.1 - - [27/Oct/2024 00:19:35] "GET / HTTP/1.1" 200 -
+[ 2024-10-27 00:35:11,160 ] 224 werkzeug - INFO -  * Detected change in '/Users/adityachaudhary/Desktop/SensorFault-Detection/app.py', reloading
