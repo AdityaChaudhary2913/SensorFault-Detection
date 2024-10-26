@@ -1,0 +1,18 @@
+[ 2024-10-26 22:09:06,049 ] 224 werkzeug - WARNING -  * Debugger is active!
+[ 2024-10-26 22:09:06,060 ] 224 werkzeug - INFO -  * Debugger PIN: 100-103-901
+[ 2024-10-26 22:09:15,934 ] 51 root - INFO - Entered initiated_data_ingestion method of data_integration class
+[ 2024-10-26 22:09:15,934 ] 36 root - INFO - Exporting data from mongodb
+[ 2024-10-26 22:09:18,245 ] 43 root - INFO - saving exported data into feature store file path :artifacts
+[ 2024-10-26 22:09:18,274 ] 54 root - INFO - got the data from mongodb
+[ 2024-10-26 22:09:18,274 ] 55 root - INFO - exited initiate_data_ingestion methos of data ingestion class
+[ 2024-10-26 22:09:18,274 ] 48 root - INFO - Entered initiate data transformation method of data transfomration class
+[ 2024-10-26 22:09:18,332 ] 30 root - INFO - Entered the save_object method of MainUtils class
+[ 2024-10-26 22:09:18,333 ] 34 root - INFO - Exited the save_object method of MainUtils class
+[ 2024-10-26 22:09:18,334 ] 79 root - INFO - Splitting training and testing input and target feature
+[ 2024-10-26 22:09:18,334 ] 86 root - INFO - Extracting model config file path
+[ 2024-10-26 22:09:18,334 ] 87 root - INFO - Extracting model config file path
+[ 2024-10-26 22:10:06,388 ] 110 root - INFO - Best found model on both training and testing dataset
+[ 2024-10-26 22:10:06,389 ] 111 root - INFO - Saving model at path: artifacts/model.pkl
+[ 2024-10-26 22:10:06,389 ] 30 root - INFO - Entered the save_object method of MainUtils class
+[ 2024-10-26 22:10:06,390 ] 34 root - INFO - Exited the save_object method of MainUtils class
+[ 2024-10-26 22:10:06,392 ] 224 werkzeug - INFO - 127.0.0.1 - - [26/Oct/2024 22:10:06] "GET /train HTTP/1.1" 200 -

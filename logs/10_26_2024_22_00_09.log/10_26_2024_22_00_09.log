@@ -4,3 +4,5 @@
  * Running on http://192.168.230.214:5001
 [ 2024-10-26 22:00:11,046 ] 224 werkzeug - INFO - [33mPress CTRL+C to quit[0m
 [ 2024-10-26 22:00:11,048 ] 224 werkzeug - INFO -  * Restarting with stat
+[ 2024-10-26 22:01:53,795 ] 224 werkzeug - INFO -  * Restarting with stat
+[ 2024-10-26 22:02:00,368 ] 224 werkzeug - INFO -  * Restarting with stat

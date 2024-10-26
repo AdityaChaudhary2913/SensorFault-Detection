@@ -3,15 +3,7 @@ import pandas as pd
 import json, os
 from src.constants import *
 
-#url
-# uri = os.getenv("MONGO_DB_URL")
-
-#create a new client and connectt to server
 client = MongoClient(MONGO_DB_URL)
-
-#create database name and collection name
-# DATABASE_NAME=os.getenv("MONGO_DATABASE_NAME")
-# COLLECTION_NAME=os.getenv("MONGO_COLLECTION_NAME")
 
 df=pd.read_csv("notebooks/wafer_23012020_041211.csv")
 
