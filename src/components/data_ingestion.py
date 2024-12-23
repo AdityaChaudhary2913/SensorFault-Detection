@@ -21,7 +21,7 @@ class DataIngestion:
 
     def export_collection_as_dataframe(self,collection_name,db_name):
         try:
-            mongo_client = MongoClient(MONGO_DB_URL)
+            mongo_client = MongoClient(MONGO_DB_URL, tls=True, tlsAllowInvalidCertificates=True)
             collection = mongo_client[db_name][collection_name]
             df = pd.DataFrame(list(collection.find()))
             if "_id" in df.columns.to_list():
